@@ -20,7 +20,10 @@ import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
+<<<<<<< HEAD
 import com.google.android.gms.tasks.Task;
+=======
+>>>>>>> f530ed2cec8078e91e943d86e73f8329ff67ac2b
 
 public class LocationService extends Service {
 
@@ -93,7 +96,11 @@ public class LocationService extends Service {
 
         LocationServices.getFusedLocationProviderClient(this)
                 .requestLocationUpdates(locationRequest, locationCallback, Looper.getMainLooper());
+<<<<<<< HEAD
 //        System.out.println("***********************************************************"+task);
+=======
+
+>>>>>>> f530ed2cec8078e91e943d86e73f8329ff67ac2b
         startForeground(Constants.LOCATION_SERVICE_ID, builder.build());
     }
 
